@@ -1,5 +1,6 @@
 import Header from '@/components/common/Header';
 import MapScene from '@/components/home/MapScene';
+import Markers from '@/components/home/Markers';
 import useInfos from '@/hooks/useInfo';
 import { Info } from '@/types/info';
 import { useEffect } from 'react';
@@ -16,6 +17,7 @@ export default function Home({ infos }: IProps) {
     <>
       <Header />
       <MapScene />
+      <Markers />
     </>
   );
 }
