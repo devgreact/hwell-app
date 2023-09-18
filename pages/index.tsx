@@ -17,7 +17,7 @@ export default function Home({ infos }: IProps) {
   return (
     <>
       <NextSeo
-        title="건강증진센터 위치 서비스"
+        title="건강증진센터 위치서비스"
         description="건강증진센터 위치 서비스 입니다."
       />
       <Header />
