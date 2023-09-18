@@ -1,14 +1,17 @@
 import Header from '@/components/common/Header';
 import MapScene from '@/components/home/MapScene';
+import useInfos from '@/hooks/useInfo';
 import { Info } from '@/types/info';
 import { useEffect } from 'react';
 interface IProps {
   infos: Info[];
 }
 export default function Home({ infos }: IProps) {
+  const { initializeInfos } = useInfos();
   useEffect(() => {
     console.log(infos);
-  }, [infos]);
+    initializeInfos(infos);
+  }, [initializeInfos, infos]);
   return (
     <>
       <Header />
