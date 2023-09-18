@@ -7,8 +7,4 @@
 
 3. hooks 폴더 아래 useInfo.tsx
 
-4. index.tsx 
-
-
-
-
+4. index.tsx
