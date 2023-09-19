@@ -11,7 +11,7 @@ interface IProps {
 export default function Home({ infos }: IProps) {
   const { initializeInfos } = useInfos();
   useEffect(() => {
-    console.log(infos);
+    // console.log(infos);
     initializeInfos(infos);
   }, [initializeInfos, infos]);
   return (
